@@ -240,19 +240,19 @@ footer {
 
 /* ------------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 1545px) {
+@media screen and (max-width: 1545px) and (min-width: 1430px) {
     li {
         padding: 5px;
     }
 }
 
-@media only screen and (max-width: 1430px) {
+@media screen and (max-width: 1430px) and (min-width: 1220px) {
     li {
         padding: 2.5px;
     }
 }
 
-@media only screen and (max-width: 1220px) {
+@media screen and (max-width: 1220px) and (min-width: 1015px) {
     body {}
 
     header {
@@ -294,11 +294,23 @@ footer {
 }
 
 @media only screen and (max-width: 1015px) {
-    body {}
 
-    header {}
+    header {
+        flex-direction: column;
+        height: 150px;
+    }
 
-    li {
+    #head2 {
+        height: 150px;
+    }
+
+    svg {
+        width: 100vw;
+        height: 150px;
+    }
+
+    .container {
+        scroll-margin-top: 150px;
     }
 
     header>div {
@@ -306,6 +318,11 @@ footer {
         min-width: 200px;
     }
 
+    #certFlex {
+        flex-wrap: wrap;
+    }
+
     .icontain {
+        padding-bottom: 10px;
     }
 }
