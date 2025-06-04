@@ -63,7 +63,7 @@ header :nth-child(3) {
 
 #head2 {
     background-color: #ee2c46;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     position: fixed;
     top: 0;
@@ -163,13 +163,13 @@ div {
     justify-content: center;
     flex-direction: column;
     box-shadow: 0 5px 20px rgb(114, 114, 114);
-    width: 100%;
+    width: 100vw;
     margin-bottom: 25px;
     scroll-margin-top: 100px;
 }
 
 .container>div {
-    width: 80%;
+    width: 80vw;
 }
 
 h3 {
@@ -265,7 +265,7 @@ footer {
     }
 
     svg {
-        width: 100%;
+        width: 100vw;
         height: 150px;
     }
 
