@@ -21,7 +21,7 @@ header {
     height: 100px;
     position: sticky;
     top: 0;
-    box-shadow: 0 2.5px 10px rgb(114, 114, 114);
+    box-shadow: 0 2.5px 10px rgba(114, 114, 114, 0.735);
 
     z-index: 2;
     width: 100vw;
@@ -54,7 +54,7 @@ header :nth-child(3) {
 }
 
 #empty {
-    background-color: #ee2c46;
+    background-color: #4f2eaf;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -63,7 +63,7 @@ header :nth-child(3) {
 }
 
 #head2 {
-    background-color: #ee2c46;
+    background-color: #4f2eaf;
     width: 100vw;
     height: 100px;
     position: fixed;
@@ -179,7 +179,7 @@ h3 {
 
 .texperience {
     border-radius: 5px;
-    background-color: #ee2c46;
+    background-color: #4f2eaf;
     margin: 10px;
     text-align: center;
 }
@@ -198,7 +198,7 @@ h3 {
 
 .iCerts {
     border-radius: 10px;
-    background-color: #ee2c46;
+    background-color: #4f2eaf;
     text-align: center;
     padding: 10px;
     margin-right: 10px;
