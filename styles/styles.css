@@ -94,6 +94,10 @@ span {
     color: rgb(92, 221, 98);
 }
 
+span2 {
+    color: rgb(221, 92, 92)
+}
+
 a {
     scroll-margin-top: 100px;
 }
