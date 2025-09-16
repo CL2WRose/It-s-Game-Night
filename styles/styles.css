@@ -180,7 +180,7 @@ h3 {
     text-align: center;
 }
 
-#certFlex {
+.gameFlex {
     display: flex;
     padding-bottom: 20px;
     justify-content: center;
@@ -188,16 +188,33 @@ h3 {
 
 .icontain {
     flex: 1;
-    min-width: 250px;
-    max-width: 300px;
+    min-width: 150px;
+    max-width: 180px;
 }
 
-.iCerts {
+.iGames {
     border-radius: 10px;
     background-color: #4f2eaf;
     text-align: center;
     padding: 10px;
     margin-right: 10px;
+    height: 250px;
+}
+
+.iGames:hover {
+    background-color: #5f38d3;
+}
+
+#iGameHighlight {
+    background-color: rgb(55, 131, 59)
+}
+
+#iGameHighlight:hover {
+    background-color: rgb(66, 156, 70);
+}
+
+.iGames>p{
+    color: rgb(255, 255, 255);
 }
 
 /*.iGames2 {
@@ -211,20 +228,24 @@ h3 {
     padding: 85px, 10px, 0;
 }*/
 
-.theCerts {
-    height: 200px;
+.theGames {
+    height: 100px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  white-space: nowrap;
+  width: 110px;
+  margin: auto;
 }
 
 .certImages {
-    max-width: 200px;
-    height: 275px;
+    max-width: 180px;
+    height: 75px;
     object-fit: cover;
     border: white, solid, 2px;
     border-radius: 5px;
 }
 
-.iCerts>p {
-    padding-top: 85px;
+.iGames>p {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -278,7 +299,7 @@ footer {
         padding: 10px;
     }
 
-    #certFlex {
+    .gameFlex {
         flex-wrap: wrap;
     }
 
@@ -315,7 +336,7 @@ footer {
         min-width: 200px;
     }
 
-    #certFlex {
+    .gameFlex {
         flex-wrap: wrap;
     }
 
