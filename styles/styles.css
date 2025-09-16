@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     font-family: Mont;
     letter-spacing: 1px;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -253,6 +254,9 @@ h3 {
 footer {
     background-color: white;
     color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
 
 
