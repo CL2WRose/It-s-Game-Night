@@ -1,6 +1,16 @@
+:root {
+    --primarycolor: #494949;
+    --secondarycolor: rgb(255, 110, 110);
+    --backcolor: #f4f4f4;
+    --maincolor: white;
+    --primaryhover: rgb(255, 110, 110);
+    --tertiarycolor: rgb(255, 110, 110);
+    --tertiaryhover:  rgb(52, 165, 127);
+}
+
 body {
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: var(--backcolor);
     display: flex;
     flex-direction: column;
     font-family: Mont;
@@ -55,7 +65,7 @@ header :nth-child(3) {
 }
 
 #empty {
-    background-color: #4f2eaf;
+    background-color: var(--primarycolor);
     position: fixed;
     top: 0;
     width: 100vw;
@@ -64,7 +74,7 @@ header :nth-child(3) {
 }
 
 #head2 {
-    background-color: #4f2eaf;
+    background-color: var(--primarycolor);
     width: 100vw;
     height: 100px;
     position: fixed;
@@ -106,7 +116,7 @@ p {
 }
 
 h2 {
-    color: rgb(92, 221, 98);
+    color: var(--secondarycolor);
 }
 
 nav {}
@@ -128,7 +138,7 @@ li {
 }
 
 li:hover {
-    background-color: rgb(92, 221, 98);
+    background-color: var(--secondarycolor);
 }
 
 a:link {
@@ -154,7 +164,7 @@ div {
 }
 
 .container {
-    background-color: white;
+    background-color: var(--maincolor);
     display: flex;
     align-items: center;
     padding-left: 10px;
@@ -176,7 +186,7 @@ h3 {
 
 .texperience {
     border-radius: 5px;
-    background-color: #4f2eaf;
+    background-color:  var(--primarycolor);
     margin: 10px;
     text-align: center;
 }
@@ -200,7 +210,7 @@ h3 {
 
 .iGames {
     border-radius: 10px;
-    background-color: #4f2eaf;
+    background-color:  var(--primarycolor);
     text-align: center;
     padding: 10px;
     margin-right: 10px;
@@ -208,15 +218,15 @@ h3 {
 }
 
 .iGames:hover {
-    background-color: #5f38d3;
+    background-color: var(--primaryhover);
 }
 
 #iGameHighlight {
-    background-color: rgb(55, 131, 59)
+    background-color: var(--tertiarycolor);
 }
 
 #iGameHighlight:hover {
-    background-color: rgb(66, 156, 70);
+    background-color: var(--tertiaryhover);
 }
 
 .iGames>p{
