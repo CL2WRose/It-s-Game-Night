@@ -247,7 +247,6 @@ h3 {
 .theGames {
     height: 100px;
     overflow-y: hidden;
-    overflow-x: scroll;
   white-space: nowrap;
   width: 110px;
   margin: auto;
