@@ -188,7 +188,7 @@ main {
     justify-content: center;
 }
 
-main>div:nth-child(even) {
+main>div:nth-child(odd) {
     background-color: var(--maintwo);
 }
 
@@ -323,11 +323,12 @@ svg:hover {
 }
 
 footer {
-    background-color: white;
-    color: var(--primarycolor);
+    background-color: var(--secondarycolor);
+    color: var(--maincolor);
     position: fixed;
     bottom: 0;
     width: 100vw;
+    text-align: center;
 }
 
 
