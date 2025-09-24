@@ -3,6 +3,7 @@
     --secondarycolor: rgb(255, 110, 110);
     --backcolor: #f4f4f4;
     --maincolor: white;
+    --maintwo: grey;
     --primaryhover: rgb(255, 110, 110);
     --tertiarycolor: rgb(255, 110, 110);
     --tertiaryhover:  rgb(52, 165, 127);
@@ -30,7 +31,7 @@ header {
     color: white;
     text-decoration: none;
     height: 100px;
-    position: sticky;
+    position: fixed;
     top: 0;
     box-shadow: 0 2.5px 10px rgba(114, 114, 114, 0.735);
 
@@ -54,6 +55,16 @@ header :nth-child(3) {
     text-align: right;
 }
 
+#gameNight {
+    position: fixed;
+    top: 30px;
+}
+
+#navdiv {
+    position: fixed;
+    top: 75px;
+}
+
 #emptyhead {
     display: flex;
     flex-direction: row;
@@ -73,6 +84,16 @@ header :nth-child(3) {
 
 }
 
+#backHead {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+#backHead>div {
+    flex: 1;
+}
+
 #head2 {
     background-color: var(--primarycolor);
     width: 100vw;
@@ -80,6 +101,14 @@ header :nth-child(3) {
     position: fixed;
     top: 0;
     z-index: 0;
+}
+
+#empti {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 150px;
+
 }
 
 #svgee {
@@ -159,6 +188,10 @@ main {
     justify-content: center;
 }
 
+main>div:nth-child(even) {
+    background-color: var(--maintwo);
+}
+
 div {
     margin: 0;
 }
@@ -170,9 +203,9 @@ div {
     padding-left: 10px;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 0 5px 20px rgb(114, 114, 114);
+    /*box-shadow: 0 5px 20px rgb(114, 114, 114);*/
     width: 100vw;
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
     scroll-margin-top: 100px;
 }
 
@@ -291,7 +324,7 @@ svg:hover {
 
 footer {
     background-color: white;
-    color: black;
+    color: var(--primarycolor);
     position: fixed;
     bottom: 0;
     width: 100vw;
@@ -312,7 +345,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1220px) and (min-width: 1015px) {
+@media screen and (max-width: 1220px) and (min-width: 805px) {
     body {}
 
     header {
@@ -341,10 +374,6 @@ footer {
         padding: 10px;
     }
 
-    .gameFlex {
-        flex-wrap: wrap;
-    }
-
     .icontain {
         padding-bottom: 10px;
     }
@@ -353,7 +382,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1015px) and (min-width: 300px) {
+@media only screen and (max-width: 805px) and (min-width: 300px) {
 
     header {
         flex-direction: column;
