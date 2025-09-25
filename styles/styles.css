@@ -30,13 +30,13 @@ header {
     align-items: center;
     color: white;
     text-decoration: none;
-    height: 100px;
+    height: 150px;
     position: fixed;
     top: 0;
     box-shadow: 0 2.5px 10px rgba(114, 114, 114, 0.735);
-
     z-index: 2;
     width: 100vw;
+    font-size: 30px;
 }
 
 header>div {
@@ -55,16 +55,6 @@ header :nth-child(3) {
     text-align: right;
 }
 
-#gameNight {
-    position: fixed;
-    top: 30px;
-}
-
-#navdiv {
-    position: fixed;
-    top: 75px;
-}
-
 #emptyhead {
     display: flex;
     flex-direction: row;
@@ -80,24 +70,14 @@ header :nth-child(3) {
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 100px;
+    height: 150px;
 
-}
-
-#backHead {
-    display: flex;
-    flex-direction: row;
-    z-index: 1;
-}
-
-#backHead>div {
-    flex: 1;
 }
 
 #head2 {
     background-color: var(--primarycolor);
     width: 100vw;
-    height: 100px;
+    height: 150px;
     position: fixed;
     top: 0;
     z-index: 0;
@@ -188,8 +168,9 @@ main {
     justify-content: center;
 }
 
-main>div:nth-child(odd) {
+.container:nth-of-type(odd) {
     background-color: var(--maintwo);
+    color: white;
 }
 
 div {
@@ -334,15 +315,54 @@ footer {
 
 /* ------------------------------------------------------------------------------------------------- */
 
+@media screen and (min-width: 1700px) {
+    /*:root {
+        --primarycolor: rgb(52, 165, 127);
+        --secondarycolor: rgb(92, 221, 98);
+        --backcolor: #121212;
+        --maincolor: rgb(30, 30, 30);
+        --maintwo: rgb(50, 50, 50);
+        --primaryhover: rgb(92, 221, 98);
+        --tertiarycolor: rgb(92, 221, 98);
+        --tertiaryhover: rgb(255, 110, 110);
+    }
+
+    #allGames {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #games, #games2 {
+        width: 50vw;
+        padding: 0;
+    }
+
+    #games>div, #games2>div {
+        width: 30vw;
+    }
+
+    .gameFlex {
+        justify-content: space-evenly;
+    }*/
+}
+
 @media screen and (max-width: 1545px) and (min-width: 1430px) {
+
     li {
         padding: 5px;
     }
 }
 
 @media screen and (max-width: 1430px) and (min-width: 1220px) {
+    header {
+        font-size: clamp(20px, 2vw, 30px);
+    }
+
     li {
         padding: 2.5px;
+    }
+
+    p {
     }
 }
 
@@ -352,6 +372,7 @@ footer {
     header {
         flex-direction: column;
         height: 150px;
+        font-size: 20px;
     }
 
     #head2 {
@@ -365,6 +386,10 @@ footer {
 
     .container {
         scroll-margin-top: 150px;
+    }
+
+    #navdiv {
+        margin-top: -15px;
     }
 
     rect {}
@@ -388,6 +413,7 @@ footer {
     header {
         flex-direction: column;
         height: 150px;
+        font-size: clamp(15px, 5vw, 20px);
     }
 
     #head2 {
@@ -401,6 +427,10 @@ footer {
 
     .container {
         scroll-margin-top: 150px;
+    }
+
+    #navdiv {
+        margin-top: -15px;
     }
 
     header>div {
@@ -420,12 +450,22 @@ footer {
         padding-bottom: 10px;
         margin: auto;
     }
+
+    li {
+        padding: 2px;
+    }
+
+    a>p {
+        margin: clamp(1px, 1vw, 10px);
+        font-size: clamp(8px, 1.5vw, 15px);
+    }
 }
 
 @media only screen and (max-width: 300px) {
 
     #logo {
         visibility: collapse;
+        margin: -10px;
     }
 
     h1 {
@@ -433,22 +473,26 @@ footer {
     }
 
     header {
-        padding-top: 10px;
         flex-direction: column;
-        height: 90px;
+        height: 150px;
+        font-size: 15px;
     }
 
     #head2 {
-        height: 100px;
+        height: 150px;
     }
 
     svg {
         width: 200vw;
-        height: 100px;
+        height: 150px;
     }
 
     .container {
-        scroll-margin-top: 100px;
+        scroll-margin-top: 150px;
+    }
+
+    #navdiv {
+        margin-top: -5px;
     }
 
     header>div {
@@ -471,7 +515,7 @@ footer {
     }
 
     footer>h3 {
-        margin: 0px;
+        margin: 0;
     }
 
     .gameFlex {
