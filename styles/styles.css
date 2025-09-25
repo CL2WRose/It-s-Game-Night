@@ -111,7 +111,7 @@ h1 {
 }
 
 a {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 150px;
 }
 
 a>p {
@@ -187,7 +187,7 @@ div {
     /*box-shadow: 0 5px 20px rgb(114, 114, 114);*/
     width: 100vw;
     /*margin-bottom: 25px;*/
-    scroll-margin-top: 100px;
+    scroll-margin-top: 150px;
 }
 
 .container>div {
@@ -229,6 +229,10 @@ h3 {
     padding: 10px;
     margin-right: 10px;
     height: 250px;
+}
+
+.iGames {
+    border: var(--secondarycolor) double 5px;
 }
 
 .iGames:hover {
@@ -351,6 +355,10 @@ footer {
     li {
         padding: 5px;
     }
+
+    .container {
+        scroll-margin-top: 150px;
+    }
 }
 
 @media screen and (max-width: 1430px) and (min-width: 1220px) {
@@ -363,6 +371,10 @@ footer {
     }
 
     p {
+    }
+
+    .container {
+        scroll-margin-top: 150px;
     }
 }
 
@@ -449,7 +461,13 @@ footer {
     .icontain {
         padding-bottom: 10px;
         margin: auto;
+        flex: 1;
+        min-width: 160px;
+        max-width: 180px;
     }
+
+.icontain {
+}
 
     li {
         padding: 2px;
@@ -470,6 +488,7 @@ footer {
 
     h1 {
         font-size: 25px;
+        padding-top: 60px;
     }
 
     header {
@@ -492,16 +511,12 @@ footer {
     }
 
     #navdiv {
-        margin-top: -5px;
+        height: 10px;
     }
 
     header>div {
         flex-grow: 1;
         min-width: 200px;
-    }
-
-    #navdiv {
-        height: 10px;
     }
 
     h2 {
